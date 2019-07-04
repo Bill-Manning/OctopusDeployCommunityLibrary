@@ -29,7 +29,8 @@
     "react-dom": "^15.0.1",
     "react-router": "^2.3.0",
     "react-syntax-highlighter": "^2.0.2",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babelify": "^7.3.0",
@@ -68,7 +69,9 @@
     "yargs": "^4.6.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "The Octopus Deploy team and contributors",
   "license": "Apache-2.0",
@@ -88,5 +91,6 @@
     "Community",
     "Step",
     "Templates"
-  ]
+  ],
+  "snyk": true
 }
